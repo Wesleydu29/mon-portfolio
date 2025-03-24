@@ -10,5 +10,6 @@ import Header from './components/Header.vue'
 <style scoped>
 * {
     padding: 30px;
+    font-family: 'poppins', sans-serif;
 }
 </style>
