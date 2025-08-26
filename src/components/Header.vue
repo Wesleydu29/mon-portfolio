@@ -3,9 +3,10 @@
         <h1>Bienvenu sur mon portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#" class="hover:underline">Accueil</a></li>
-                <li><a href="#" class="hover:underline">Projets</a></li>
-                <li><a href="#" class="hover:underline">Contact</a></li>
+                <li v-for="link in links" :key="index">
+                    <a href="">{{ link }}</a>
+                </li>
+                
             </ul>
         </nav>
     </header>
@@ -14,6 +15,10 @@
 
 
 <script setup> 
+
+import { ref } from 'vue';
+
+const links = ref(["Accueil","Projets","Contact"])
 
 </script>
 
