@@ -55,7 +55,7 @@ const projets = ref([{
 }, {
     imageUrl:'/images/m_v_g.jpg',
     title: "Mon vieux grimoire",
-    description:"Conception d'un site internet pour le compte d'une architecte",
+    description:"Mise en place d'un Back-end pour une application de location de livre",
     outils:"HTML5, CSS3, Javascript, Nodejs, Express, MongoDB"
 
 }, {
@@ -67,8 +67,8 @@ const projets = ref([{
 }, {
     imageUrl:'/images/menu-maker.jpg',
     title: "Menu Maker",
-    description:"Conception d'un site internet pour le compte d'une architecte",
-    outils:"Notion, veille informatique, Figma, AGILE"
+    description:"Mise en situation, planification du développement d'un site web",
+    outils:"Notion, veille technologique, Figma, AGILE"
 
 }])
 </script>
