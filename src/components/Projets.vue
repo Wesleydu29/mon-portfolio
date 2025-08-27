@@ -3,12 +3,14 @@
         <div class="container-card">
             <ul>
                 <li v-for="projet in projets" :key="projet.title" class="card">
+                    <a :href="projet.link " target="_blank" class="card-link">
                     <img :src="projet.imageUrl" :alt="projet.title">
-                    <div class="infos-card">
+                    <div class="card-content">
                         <h2>{{ projet.title }}</h2>
                         <p>{{ projet.description }}</p>
                         <p>{{ projet.outils }}</p>
                     </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -31,37 +33,43 @@ const projets = ref([{
     imageUrl:'/images/femme_souriante.webp',
     title: "Claude Henry, hypnothérapeute",
     description:"Création d'un site internet pour le compte d'un hypnothérapeute",
-    outils:"Javascript, React, MongoDB, Nodejs et Express"
+    outils:"Javascript, React, MongoDB, Nodejs et Express",
+    link:"https://github.com/Wesleydu29/Claude_Henry"
 
 },{
     imageUrl:'/images/appartement-paris-v.png',
     title: "Sophie Bluel",
     description:"Conception d'un site internet pour le compte d'une architecte",
-    outils:"HTML5, CSS3, Javascript"
+    outils:"HTML5, CSS3, Javascript",
+    link:"https://github.com/Wesleydu29/Projet-3"
 
 }, {
     imageUrl:'/images/booki.jpg',
     title: "Booki",
     description:"Conception d'un site internet de réservation de vacance",
-    outils:"HTML5, CSS3"
+    outils:"HTML5, CSS3",
+    link:"https://github.com/Wesleydu29/projet2"
 
 }, {
     imageUrl:'/images/nina_carducci.webp',
     title: "Nina Carducci",
     description:"Refonte d'un site internet pour le compte d'une photographe",
-    outils:"HTML5, CSS3, Wave, SEO"
+    outils:"HTML5, CSS3, Wave, SEO",
+    link:"https://github.com/Wesleydu29/projet-4"
 
 }, {
     imageUrl:'/images/m_v_g.jpg',
     title: "Mon vieux grimoire",
     description:"Mise en place d'un Back-end pour une application de location de livre",
-    outils:"HTML5, CSS3, Javascript, Nodejs, Express, MongoDB"
+    outils:"HTML5, CSS3, Javascript, Nodejs, Express, MongoDB",
+    link:"https://github.com/Wesleydu29/P6_mon_vieux_grimoire"
 
 }, {
     imageUrl:'/images/kasa.webp',
-    title: "Kaza",
+    title: "Kasa",
     description:"Création d'un site internet de location de bien immobilier",
-    outils:"HTML5, SASS, Javascript, React"
+    outils:"HTML5, SASS, Javascript, React",
+    link:"https://github.com/Wesleydu29/P5-Kasa"
 
 }, {
     imageUrl:'/images/menu-maker.jpg',
@@ -113,13 +121,18 @@ const projets = ref([{
 .card:hover {
     transform: scale(1.05);
 }
-.card .infos-card {
+.card-link,
+.card-content {
     display: flex;
     flex-direction: column;
-    height: 50%;
-    gap: 20px;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+.card-content {
     padding: 15px;
 }
+
 
 .card img {
   width: 100%;
@@ -131,7 +144,5 @@ const projets = ref([{
   padding: 0 15px;
   margin: 15px 0 10px 0;
 }
-
-
 
 </style>
