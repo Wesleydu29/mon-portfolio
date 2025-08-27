@@ -13,12 +13,13 @@
                 </li>
             </ul>
         </div>
-
     </div>
+    <Banner/>
 
 </template>
 
 <script setup>
+import Banner from './Banner.vue';
 
 import { ref } from 'vue';
 
@@ -50,7 +51,7 @@ const projets = ref([{
     imageUrl:'/images/nina_carducci.webp',
     title: "Nina Carducci",
     description:"Refonte d'un site internet pour le compte d'une photographe",
-    outils:"HTML5, CSS3, Wave"
+    outils:"HTML5, CSS3, Wave, SEO"
 
 }, {
     imageUrl:'/images/m_v_g.jpg',
@@ -88,7 +89,6 @@ const projets = ref([{
 
 .container-card {
   width: 100%;
-  max-width: 1200px; 
 }
 
 .container-card ul {
@@ -101,7 +101,7 @@ const projets = ref([{
 }
 
 .card {
-  width: 350px;
+  width: 29%;
   height: 550px;
   border-radius: 5px;
   border: 1px solid #ddd;
@@ -119,6 +119,7 @@ const projets = ref([{
     flex-direction: column;
     height: 50%;
     gap: 20px;
+    padding: 15px;
 }
 
 .card img {

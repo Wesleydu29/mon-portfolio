@@ -1,10 +1,14 @@
 <template>
     <div class="footer">
-        <p>Goarant Wesley. Front-end Developper</p>
+        <p> {{date}} Goarant Wesley. Front-end Developer</p>
     </div>
 
 </template>
 <script setup>
+
+import { ref } from 'vue';
+
+const date = ref(new Date().getFullYear())
 
 </script>
 
