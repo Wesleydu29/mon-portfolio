@@ -1,6 +1,5 @@
 <template>
     <div class="container">
-        <h2>Mes projets</h2>
         <div class="container-card">
             <ul>
                 <li v-for="projet in projets" :key="projet.title" class="card">
@@ -14,12 +13,11 @@
             </ul>
         </div>
     </div>
-    <Banner/>
 
 </template>
 
 <script setup>
-import Banner from './Banner.vue';
+
 
 import { ref } from 'vue';
 
@@ -80,6 +78,7 @@ const projets = ref([{
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  margin-top: 2em;
 }
 
 .container h2 {
