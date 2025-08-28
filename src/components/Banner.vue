@@ -23,9 +23,7 @@ defineProps({
 
 <style scoped>
 .banner {
-    background-image: url(/public/images/appartement-paris-v.png);
-    background-position: center;
-    background-size: cover;
+    background-color: rgba(119, 150, 203, 0.5) ;
     width: 100%;
     height: 100px;
     display: flex;
@@ -35,6 +33,8 @@ defineProps({
 }
 .banner h2 {
     font-size: 3rem;
+    color: #000;
+    font-family: 'poppins', sans-serif;
 }
 
 </style>

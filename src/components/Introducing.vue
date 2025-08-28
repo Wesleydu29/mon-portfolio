@@ -19,7 +19,7 @@
 <style scoped>
 .container {
     margin-top: 2rem;
-    background-color: bisque;
+    background-color: rgba(201, 202, 217, 0.2);
     padding: 20px;
 }
 .introducing {
@@ -32,6 +32,7 @@
 .introducing p {
     width: 30%;
     font-size: 1.2rem;
+    font-family: 'poppins', sans-serif;
 }
 .introducing img {
     width: 300px;

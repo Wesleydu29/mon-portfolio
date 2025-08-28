@@ -92,6 +92,7 @@ const projets = ref([{
 .container h2 {
   text-align: center;
   margin-bottom: 30px;
+  font-family: 'poppins', sans-serif;
 }
 
 .container-card {
@@ -120,6 +121,7 @@ const projets = ref([{
 }
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 .card-link,
 .card-content {
@@ -131,6 +133,7 @@ const projets = ref([{
 }
 .card-content {
     padding: 15px;
+    font-family: 'poppins', sans-serif;
 }
 
 

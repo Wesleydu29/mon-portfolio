@@ -1,7 +1,7 @@
 <template>
     <Banner content="Mes projets"/>
     <Projets/>
-    <Banner content="A propos de moi"/>
+    <Banner content="À propos de moi"/>
     <Introducing/>
     <Softskills/>
 
