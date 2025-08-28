@@ -3,6 +3,8 @@
     <Projets/>
     <Banner content="A propos de moi"/>
     <Introducing/>
+    <Softskills/>
+
 
 
 </template>
@@ -12,6 +14,7 @@
 import Projets from '@/components/Projets.vue';
 import Banner from '@/components/Banner.vue';
 import Introducing from '@/components/Introducing.vue';
+import Softskills from '@/components/Softskills.vue';
 
 </script>
 
