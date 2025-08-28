@@ -3,7 +3,7 @@
     <div class="container">
         <div class="slider-wrapper" ref="sliderWrapper">
             <div class="slider" ref="slider">
-            <!-- Items originaux -->
+            <!-- items originaux -->
                 <div v-for="item in softskills" :key="`original-${item.title}`" class="item">
                     <img :src="item.image" :alt="item.title">
                     <span>{{ item.title }}</span>
@@ -63,7 +63,7 @@ const calculateItemsWidth = () => {
 if (slider.value) {
 const items = slider.value.querySelectorAll('.item');
 if (items.length > 0) {
-// Calculer la largeur totale des items originaux (première moitié)
+// Calcule de la largeur totale des items originaux
 itemsWidth = 0;
 const originalItems = Math.floor(items.length / 2);
 for (let i = 0; i < originalItems; i++) {
@@ -81,7 +81,7 @@ const animate = () => {
 if (!isPaused && slider.value && itemsWidth > 0) {
 currentPosition -= speed;
 
-// Quand on a parcouru la largeur des items originaux,
+// quand on a parcouru la largeur des items originaux,
 // on revient au début de façon seamless
 if (Math.abs(currentPosition) >= itemsWidth) {
   currentPosition = 0;
@@ -116,7 +116,7 @@ return new Promise(resolve => {
 
 await Promise.all(imagePromises);
   
-// Calculer les dimensions et démarrer l'animation
+// calcul des dimensions et démarrage de l'animation
 setTimeout(() => {
 calculateItemsWidth();
 animate();
@@ -205,7 +205,7 @@ text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 font-family: 'poppins', sans-serif;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
 .item {
 min-width: 150px;
