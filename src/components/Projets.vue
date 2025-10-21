@@ -39,7 +39,9 @@ const projets = ref([{
     outils:[
       { name: "Python", icon: "/icons/python.png" },
       { name: "Kivy", icon: "/icons/Kivy_logo.png" }
-    ]
+    ],
+    link:"https://github.com/Wesleydu29/Galaxy_Game"
+
 
 },{
     imageUrl:'/images/chambre-hotel.jpg',
@@ -102,7 +104,6 @@ const projets = ref([{
     imageUrl:'/images/m_v_g.jpg',
     title: "Mon vieux grimoire",
     description:"Mise en place d'un Back-end pour une application de location de livre",
-    outils:"HTML5, CSS3, Javascript, Nodejs, Express, MongoDB",
     outils:[
       { name: "HTML", icon: "/icons/html5.png" },
       { name: "CSS", icon: "/icons/css3.png" },
@@ -129,7 +130,7 @@ const projets = ref([{
 }, {
     imageUrl:'/images/menu-maker.jpg',
     title: "Menu Maker",
-    description:"Mise en situation, planification du développement d'un site web",
+    description:"Mise en situation, planification du développement d'un site web, gestion agile",
     outils:[
       { name: "Notion", icon: "/icons/icon-notion.png" },
       { name: "Figma", icon: "/icons/Figma-logo.svg" },
