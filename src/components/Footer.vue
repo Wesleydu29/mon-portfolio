@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <p> {{date}} Goarant Wesley. Front-end Developer</p>
+        <p> {{date}} Goarant Wesley. Full-Stack Developer</p>
     </div>
 
 </template>

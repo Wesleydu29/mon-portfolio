@@ -26,7 +26,7 @@ const slider = ref(null);
 const sliderWrapper = ref(null);
 let animationId = null;
 let currentPosition = 0;
-const speed = 1; // pixels par frame
+const speed = 3; // pixels par frame
 let isPaused = false;
 let itemsWidth = 0;
 
@@ -49,9 +49,15 @@ image:"/icons/vue.png"
 title:"Python",
 image:"/icons/python.png"
 }, {
+title:"Django",
+image:"/icons/django-logo.png"
+}, {
+title:"Kivy",
+image:"/icons/Kivy_logo.png"
+},{
 title:"Base de données",
 image:"/icons/base-de-donnees.png"
-}, {
+},{
 title:"Docker",
 image:"/icons/docker.png"
 }, {

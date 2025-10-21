@@ -24,6 +24,12 @@
 import { ref } from 'vue';
 
 const projets = ref([{
+    imageUrl:'/images/bg1.jpg',
+    title: "GALAXY",
+    description:"Jeu mobile et desktop en 2D avec perspective, le but étant de rester sur le chemin tracé, sans jamais en sortir",
+    outils:'Python, Kivy'
+
+},{
     imageUrl:'/images/chambre-hotel.jpg',
     title: "Hotel-connect",
     description:"Application mobile et internet de gestion d'hôtel",
@@ -141,6 +147,8 @@ const projets = ref([{
   width: 100%;
   height: 50%;
   object-fit: cover; 
+  display: block; 
+  aspect-ratio: 16 / 9;
 }
 
 .card h2 {
