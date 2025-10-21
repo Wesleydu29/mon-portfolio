@@ -8,7 +8,16 @@
                     <div class="card-content">
                         <h2>{{ projet.title }}</h2>
                         <p>{{ projet.description }}</p>
-                        <p>{{ projet.outils }}</p>
+                        <p>Outils :</p>
+                        <div class="outils">
+                            <img 
+                            v-for="outil in projet.outils" 
+                            :key="outil.name"
+                            :src="outil.icon" 
+                            :alt="outil.name"
+                            class="outil-icon"
+                            >
+                        </div>
                     </div>
                     </a>
                 </li>
@@ -27,40 +36,66 @@ const projets = ref([{
     imageUrl:'/images/bg1.jpg',
     title: "GALAXY",
     description:"Jeu mobile et desktop en 2D avec perspective, le but étant de rester sur le chemin tracé, sans jamais en sortir",
-    outils:'Python, Kivy'
+    outils:[
+      { name: "Python", icon: "/icons/python.png" },
+      { name: "Kivy", icon: "/icons/Kivy_logo.png" }
+    ]
 
 },{
     imageUrl:'/images/chambre-hotel.jpg',
     title: "Hotel-connect",
     description:"Application mobile et internet de gestion d'hôtel",
-    outils:"Javascript, React, PHP, Arduino"
+    outils:[
+      { name: "Javascript", icon: "/icons/js.png" },
+      { name: "PHP", icon: "/icons/PHP.png" },
+      { name: "React", icon: "/icons/react.webp" }
+    ]
 
 }, {
     imageUrl:'/images/femme_souriante.webp',
     title: "Claude Henry, hypnothérapeute",
     description:"Création d'un site internet pour le compte d'un hypnothérapeute",
-    outils:"Javascript, React, MongoDB, Nodejs et Express",
+    outils:[
+      { name: "Javascript", icon: "/icons/js.png" },
+      { name: "React", icon: "/icons/react.webp" },
+      { name: "Mongodb", icon: "/icons/mongodb.png" },
+      { name: "Nodejs", icon: "/icons/Node.js.png" },
+      { name: "Express", icon: "/icons/Expressjs.png" }
+    ],
+    name:"Javascript, React, MongoDB, Nodejs et Express",
     link:"https://github.com/Wesleydu29/Claude_Henry"
 
 },{
     imageUrl:'/images/appartement-paris-v.png',
     title: "Sophie Bluel",
     description:"Conception d'un site internet pour le compte d'une architecte",
-    outils:"HTML5, CSS3, Javascript",
+    outils:[
+      { name: "Javascript", icon: "/icons/js.png" },
+      { name: "HTML", icon: "/icons/html5.png" },
+      { name: "CSS", icon: "/icons/css3.png" }
+    ],
     link:"https://github.com/Wesleydu29/Projet-3"
 
 }, {
     imageUrl:'/images/booki.jpg',
     title: "Booki",
     description:"Conception d'un site internet de réservation de vacance",
-    outils:"HTML5, CSS3",
+    outils:[
+      { name: "HTML", icon: "/icons/html5.png" },
+      { name: "CSS", icon: "/icons/css3.png" }
+    ],
     link:"https://github.com/Wesleydu29/projet2"
 
 }, {
     imageUrl:'/images/nina_carducci.webp',
     title: "Nina Carducci",
     description:"Refonte d'un site internet pour le compte d'une photographe",
-    outils:"HTML5, CSS3, Wave, SEO",
+    outils:[
+      { name: "HTML", icon: "/icons/html5.png" },
+      { name: "CSS", icon: "/icons/css3.png" },
+      { name: "Wave", icon: "/icons/wave-logo.jpg" },
+      { name: "SEO", icon: "/icons/SEO.jpg" }
+    ],
     link:"https://github.com/Wesleydu29/projet-4"
 
 }, {
@@ -68,6 +103,14 @@ const projets = ref([{
     title: "Mon vieux grimoire",
     description:"Mise en place d'un Back-end pour une application de location de livre",
     outils:"HTML5, CSS3, Javascript, Nodejs, Express, MongoDB",
+    outils:[
+      { name: "HTML", icon: "/icons/html5.png" },
+      { name: "CSS", icon: "/icons/css3.png" },
+      { name: "Javascript", icon: "/icons/js.png" },
+      { name: "Nodejs", icon: "/icons/Node.js.png" },
+      { name: "Express", icon: "/icons/Expressjs.png" },
+      { name: "MongoDB", icon: "/icons/mongodb.png" }
+    ],
     link:"https://github.com/Wesleydu29/P6_mon_vieux_grimoire"
 
 }, {
@@ -75,13 +118,23 @@ const projets = ref([{
     title: "Kasa",
     description:"Création d'un site internet de location de bien immobilier",
     outils:"HTML5, SASS, Javascript, React",
+    outils:[
+      { name: "HTML", icon: "/icons/html5.png" },
+      { name: "SASS", icon: "/icons/Sass.png" },
+      { name: "Javascript", icon: "/icons/js.png" },
+      { name: "React", icon: "/icons/react.webp" },
+    ],
     link:"https://github.com/Wesleydu29/P5-Kasa"
 
 }, {
     imageUrl:'/images/menu-maker.jpg',
     title: "Menu Maker",
     description:"Mise en situation, planification du développement d'un site web",
-    outils:"Notion, veille technologique, Figma, AGILE"
+    outils:[
+      { name: "Notion", icon: "/icons/icon-notion.png" },
+      { name: "Figma", icon: "/icons/Figma-logo.svg" },
+      { name: "Javascript", icon: "/icons/js.png" },
+    ],
 
 }])
 </script>
@@ -133,6 +186,7 @@ const projets = ref([{
 .card-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 100%;
     text-decoration: none;
     color: #000;
@@ -155,5 +209,23 @@ const projets = ref([{
   padding: 0 15px;
   margin: 15px 0 10px 0;
 }
+.outils {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.outils .outil-icon {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  filter: brightness(1.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
 
+.outil-icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.3);
+}
 </style>

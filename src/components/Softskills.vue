@@ -26,7 +26,7 @@ const slider = ref(null);
 const sliderWrapper = ref(null);
 let animationId = null;
 let currentPosition = 0;
-const speed = 3; // pixels par frame
+const speed = 2; // pixels par frame
 let isPaused = false;
 let itemsWidth = 0;
 
