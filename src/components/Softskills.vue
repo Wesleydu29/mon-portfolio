@@ -157,6 +157,7 @@ window.removeEventListener('resize', calculateItemsWidth);
 width: 100%;
 margin-top: 4rem;
 overflow: hidden;
+margin-bottom: 4rem;
 }
 
 .slider-wrapper {

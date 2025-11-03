@@ -4,6 +4,8 @@
     <Banner content="À propos de moi"/>
     <Introducing/>
     <Softskills/>
+    <Banner content="Contactez moi"/>
+    <Form/>
 
 
 
@@ -15,6 +17,7 @@ import Projets from '@/components/Projets.vue';
 import Banner from '@/components/Banner.vue';
 import Introducing from '@/components/Introducing.vue';
 import Softskills from '@/components/Softskills.vue';
+import Form from '@/components/Form.vue';
 
 </script>
 
