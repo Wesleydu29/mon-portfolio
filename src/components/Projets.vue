@@ -33,6 +33,17 @@
 import { ref } from 'vue';
 
 const projets = ref([{
+    imageUrl:'/images/egor-komarov.jpg',
+    title: "BEATBOX",
+    description:"Clavier electronic, contenant divers samples, afin de faire des productions musicales",
+    outils:[
+      { name: "Python", icon: "/icons/python.png" },
+      { name: "Kivy", icon: "/icons/Kivy_logo.png" },
+      { name: "AudioStream", icon: "/icons/audiostream.webp" }
+    ],
+    link:"https://github.com/Wesleydu29/BeatBox"
+
+},{
     imageUrl:'/images/bg1.jpg',
     title: "GALAXY",
     description:"Jeu mobile et desktop en 2D avec perspective, le but étant de rester sur le chemin tracé, sans jamais en sortir",
@@ -41,7 +52,6 @@ const projets = ref([{
       { name: "Kivy", icon: "/icons/Kivy_logo.png" }
     ],
     link:"https://github.com/Wesleydu29/Galaxy_Game"
-
 
 },{
     imageUrl:'/images/chambre-hotel.jpg',
