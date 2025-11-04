@@ -30,6 +30,7 @@ defineProps({
     justify-content: center;
     align-items: center;
     margin-top: 2em;
+    margin-bottom: 2rem;
 }
 .banner h2 {
     font-size: 3rem;
