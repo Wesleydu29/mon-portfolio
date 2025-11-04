@@ -25,5 +25,8 @@ import Form from '@/components/Form.vue';
 
 </script>
 
-<style>
+<style scoped>
+html {
+    scroll-behavior: smooth;
+}
 </style>
