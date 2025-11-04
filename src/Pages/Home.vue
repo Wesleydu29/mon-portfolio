@@ -2,10 +2,14 @@
     <Banner content="Mes projets"/>
     <Projets/>
     <Banner content="À propos de moi"/>
-    <Introducing/>
+    <section id="about">
+        <Introducing/>
+    </section>
     <Softskills/>
     <Banner content="Contactez moi"/>
-    <Form/>
+    <section id="contact">
+        <Form/>
+    </section>
 
 
 

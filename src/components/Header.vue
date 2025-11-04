@@ -3,10 +3,9 @@
         <h1>Bienvenu sur mon portfolio</h1>
         <nav>
             <ul>
-                <li v-for="link in links" :key="index">
-                    <a href="">{{ link }}</a>
+                <li v-for="(link, index) in links" :key="index">
+                    <a :href="link.href">{{ link.name }}</a>
                 </li>
-                
             </ul>
         </nav>
     </header>
@@ -18,7 +17,10 @@
 
 import { ref } from 'vue';
 
-const links = ref(["Accueil","Projets","Contact"])
+const links = ref([
+    { name: "À propos", href: "#about" },
+    { name: "Contact", href: "#contact" }
+]);
 
 </script>
 

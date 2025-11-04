@@ -58,7 +58,6 @@ const isValidEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 };
-// Gère l'envoi du formulaire
 const handleSubmit = async () => {
     
     if (!isFormValid.value || isSubmitting.value) return;
