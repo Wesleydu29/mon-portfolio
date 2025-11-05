@@ -10,6 +10,7 @@
     <section id="contact">
         <Form/>
     </section>
+    <Scroll/>
 
 
 
@@ -22,6 +23,7 @@ import Banner from '@/components/Banner.vue';
 import Introducing from '@/components/Introducing.vue';
 import Softskills from '@/components/Softskills.vue';
 import Form from '@/components/Form.vue';
+import Scroll from '@/components/Scroll.vue';
 
 </script>
 
