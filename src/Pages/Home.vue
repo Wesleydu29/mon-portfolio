@@ -1,5 +1,6 @@
 <template>
     <Banner content="Mes projets"/>
+    <Switch/>
     <Projets/>
     <Banner content="À propos de moi"/>
     <section id="about">
@@ -24,6 +25,7 @@ import Introducing from '@/components/Introducing.vue';
 import Softskills from '@/components/Softskills.vue';
 import Form from '@/components/Form.vue';
 import Scroll from '@/components/Scroll.vue';
+import Switch from '@/components/Switch.vue';
 
 </script>
 
